@@ -19,9 +19,7 @@ Feel free to edit or create new FIO jobs.
 	Make sure the FIO is installed on the machine you're working on and you have access to the floating network.
 
 NOTE:
-If you opt not to use the floating IPs and run the tests from a management VM, make the following changes to your procedure:
-	- In 01-spawn-vms.sh, use svc-spawn-vm-and-vol-nofip.sh instead of svc-spawn-vm-and-vol.sh and remove the "> fips" operator. (be sure to fill its variables as described in #1 though)
-	- After 01-spawn-vms.sh finishes, run 012-collect-fixed-ips.sh to gather the fixed addresses of the VMs.
+If you opt not to use the floating IPs and run the tests from a management VM, use 01-spawn-vms-nofip.sh instead of 01-spawn-vms.sh.
 
 2. Copy the VM private key to this directory and rename it to "vm_key".
 	
