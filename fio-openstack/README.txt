@@ -10,7 +10,7 @@ The following jobs are included:
 Feel free to edit or create new FIO jobs.
 
 1. Open svc-spawn-vm-and-vol.sh and set the following variables:
-    - sg (security group name)
+	- sg (security group name)
 	- pool (floating ip pool name)
 	- net-id (fixed network to use). Make sure the network is large enough to accomodate all the VMs.
 	- image (ubuntu image with iperf and fio packages installed, root user MUST be enabled and the public key must be placed with 400 to /root/.ssh/authorized_keys)
@@ -37,8 +37,8 @@ If you opt not to use the floating IPs and run the tests from a management VM, u
 6. Edit 04-spt.sh match the 03-gen-fip-lists.sh
 7. Create the directory structure:
      - fio-results
-	    | -> persistent
-		| -> ephemeral
+     | -> persistent
+     | -> ephemeral
 
 8. Run the 021, 022 and 023 scripts.
 9. Run the 03 script.
